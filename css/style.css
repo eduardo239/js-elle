@@ -313,7 +313,7 @@ input {
   cursor: pointer;
 }
 .footer-icons img:hover {
-  background-color: #f29bb2;
+  background-color: #66f2e4;
 }
 
 .footer-email {
@@ -366,28 +366,26 @@ input {
     padding: 0.5rem;
     text-align: center;
   }
-  .content-a p {
+  .section-a p {
     font-size: 1.5rem;
   }
-  .content-a img {
+  .section-a img {
     max-width: 12rem;
   }
-  .content-b-image {
+  .section-b-content {
     min-height: 50vh;
   }
-  .content-b-image h1 {
+  .section-b-content h1 {
     font-size: 4rem;
     text-align: center;
   }
-  .pos-b {
+  .text-pos-b {
     bottom: 0;
   }
-  .pos-a {
+  .text-pos-a {
     top: 0;
   }
-  .footer {
-    padding-top: 3rem;
-  }
+
   .footer-links li {
     text-align: center;
   }
