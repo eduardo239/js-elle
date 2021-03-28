@@ -32,20 +32,17 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  console.log(document.documentElement.scrollTop);
-
   const links = document.querySelectorAll('.menu a');
   const navigation = document.getElementById('navigation');
 
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    console.log(links);
     links.forEach((e) => (e.style.fontSize = '.9rem'));
     navigation.style.backgroundColor = '#fff';
     navigation.style.height = '36px';
     navigation.style.boxShadow =
       '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)';
   } else {
-    navigation.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+    navigation.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
     links.forEach((e) => (e.style.fontSize = '1rem'));
     navigation.style.height = 'auto';
     navigation.style.boxShadow =

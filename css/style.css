@@ -95,6 +95,9 @@ iframe {
 .bg-white {
   background-color: #fff;
 }
+.bg-pink {
+  background-color: #f29bb2;
+}
 /* - - - - - - - layout - - - - - - - */
 .min-h-50 {
   min-height: 50vh;
@@ -326,6 +329,19 @@ iframe {
   position: absolute;
   bottom: 20%;
   left: 0;
+}
+/* - - - - - - - content c - - - - - - - */
+.card-x img {
+  max-width: 15rem;
+  display: block;
+  margin: 0 auto;
+}
+.card-x {
+  text-align: center;
+  color: #fff;
+}
+.card-x h4 {
+  margin: 1rem 0 0.5rem;
 }
 /* - - - - - - - footer - - - - - - - */
 .footer {
