@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- modal -->
+    <!-- modal menu -->
     <div id="modal" class="modal">
       <div class="container">
         <div class="modal-content-x">
@@ -31,15 +31,36 @@
         </div>
       </div>
     </div>
-    <!-- modal -->
-
+    <!-- modal play -->
+    <div id="modal_play" class="modal-play">
+      <div class="youtube">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/cEa5R8Rs8qE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="close-modal-play">
+        <a id="close_play" class="b b-dark" onclick="show_modal_play()">
+          close
+        </a>
+      </div>
+    </div>
+    <!-- end modal -->
     <div class="container">
       <div class="row">
         <div class="col">
           <!--  -->
-          <nav class="navigation d-flex justify-content-between">
+          <nav
+            id="navigation"
+            class="navigation d-flex justify-content-between"
+          >
             <div class="logo">
-              <img class="logo" src="./img/Elle.svg" alt="" />
+              <img src="./img/Elle.svg" alt="" />
             </div>
             <div class="menu">
               <ul class="d-flex">
@@ -71,7 +92,13 @@
               A detective in a small Pennsylvania town investigates a local hug
               while trying to keep her life from falling apart.
             </p>
-            <a href="#" class="b b-pink">PLAY</a>
+            <a
+              id="show_play"
+              href="#"
+              class="b b-pink"
+              onclick="show_modal_play()"
+              >PLAY</a
+            >
           </div>
         </div>
         <div class="col-md-6 col-12">
@@ -131,9 +158,9 @@
         <div class="row w-100">
           <div class="col-12 col-md-4 col-sm-6 footer-links">
             <ul>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">terms and conditions</a></li>
-              <li><a href="#">about</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">About</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-4 col-sm-12 order-1 order-md-0 footer-main">
@@ -155,9 +182,9 @@
           </div>
           <div class="col-12 col-md-4 col-sm-6 footer-links">
             <ul>
-              <li><a href="#">shop</a></li>
-              <li><a href="#">returns</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
         </div>
